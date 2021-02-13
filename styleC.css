@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Ballet&display=swap');
+
+
+.partA:hover{
+    background: linear-gradient(-45deg, #D0D0FF, #E8CFEE, #C68BD8, #1004AF);
+    animation: gradient-animation 5s ease infinite;
+    background-size: 400% 400%;
+    cursor: pointer;
+    width: 500px;
+}
+
+@keyframes gradient-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.partB{
+    position: relative;
+}
+
+.partB:hover {
+    animation: my-animation 5s ease infinite;
+}
+@keyframes my-animation {
+    0%{  
+        background-color:#E8CFEE; 
+        left:0px; 
+        top:0px;
+        width: 150px;
+    }
+    25%{
+      background-color:#E0BBE4; 
+      left:120px; 
+      top:0px;
+    }
+  50%{
+      background-color:#957DAD; 
+      left:200px; 
+      top:150px;
+      height: 150px;
+    }
+  75%{background-color:#D291BC; 
+     left:-150px; 
+     top:0px;}
+  100%{
+      background-color:#FFDFD3; 
+      left:0px; 
+      top:0px;} 
+}
+
+
+.partC {
+    position: relative;
+}
+.partC:hover {
+        animation: shrink 1.5s ease-out infinite;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        animation-fill-mode: none;
+        animation-play-state: running;
+}
+
+@keyframes shrink{
+    0% {
+        transform: scale(.3);
+        background-color: #C68BD8;
+        border-radius: 100%;
+    }
+    50% {
+        background-color: #957DAD;
+      }
+      100% {
+        transform: scale(1.5);
+        background-color: #D0D0FF;
+      }
+}
+.partD{
+    position: relative;
+}
+.partD:hover{
+    animation: shadow 5s ease infinite;
+    cursor: pointer;
+}
+
+@keyframes shadow{
+    0% {
+        box-shadow: 0 5px 2px -3px #777;
+    }
+    50%{
+        box-shadow: 0 5px 8px #777;
+    75%{
+        box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1);
+    }
+}
+}

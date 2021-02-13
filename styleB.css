@@ -1,0 +1,27 @@
+#container{
+    display: flex;
+    height: 100%;
+}
+
+#container div{
+    width: 100px;
+    height: 150px;
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eeeff2;
+    border-left: 10px dotted #D0D0FF;
+    margin: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+#container .partF{
+    margin-left: auto;
+    margin-top: 70vh;
+}
+
+#container > div:hover{
+    cursor: pointer;
+    background-color: yellow;
+    color: goldenrod;
+}
+
